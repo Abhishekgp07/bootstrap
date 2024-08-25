@@ -1,47 +1,55 @@
 package org.bootstrap.sort;
 
 import java.util.Scanner;
-class bubbleSortAlgo {
-    void bubbleSort(int arr[], int size) {
-        int temp = 0;
-        for (int i = 0; i < size; i++) {
-            for (int j = i + 1; i < size; i++) {
+
+class BubbleSortAlgo {
+    public void bubbleSort(int arr[], int size) {
+        int temp;
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = i + 1; j < size; j++) {
                 if (arr[i] > arr[j]) {
-                    arr[i] = temp;
+                    temp = arr[i];
                     arr[i] = arr[j];
-                    temp = arr[j];
+                    arr[j] = temp;
                 }
             }
         }
-        //after the sorting
-        System.out.print("The sorted array:");
-        for(int i=0;i<size;i++){
-            System.out.println(arr[i]+" ");
-        }
 
+        // After sorting
+        System.out.println("The sorted array:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
+}
 
-    class BubbleSort {
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            //collecting the array size
-            System.out.println("enter the size of the array:");
-            int size = sc.nextInt();
-            //creating the array
-            int arr[] = new int[size];
-            //collecting the array data
-            System.out.println("enter the array element:");
-            for (int i = 0; i < size; i++) {
-                arr[i] = sc.nextInt();
-            }
-            //array before sorting
-            System.out.print("the array before sorting:");
-            for(int i=0;i<size;i++){
-                System.out.print(arr[i]+" ");
-            }
-            bubbleSortAlgo bs=new bubbleSortAlgo();
-            bs.bubbleSort(arr,size);
+public class BubbleSort {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Collecting the array size
+        System.out.println("Enter the size of the array:");
+        int size = sc.nextInt();
+
+        // Creating the array
+        int arr[] = new int[size];
+
+        // Collecting the array data
+        System.out.println("Enter the array elements:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
         }
 
+        // Array before sorting
+        System.out.println("The array before sorting:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        // Sorting the array using Bubble Sort
+        BubbleSortAlgo bs = new BubbleSortAlgo();
+        bs.bubbleSort(arr, size);
     }
 }
