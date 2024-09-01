@@ -1,2 +1,2 @@
 # bootstrap
-Practice &amp; Learn
+Practice &amp; Learning the Technology
