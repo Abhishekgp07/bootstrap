@@ -5,8 +5,6 @@ public class PalindromeNumber {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the value of n:");
         int n= sc.nextInt();
-        String sn= sc.next();
-        System.out.println(sn);
         int copy=n;
         int x=0;
             while (n != 0) {
