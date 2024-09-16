@@ -1,23 +1,21 @@
 package org.bootstrap.Learning_Concpets;
 
 import java.util.Scanner;
-
 class Task {
     void banking() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the username:");
+        System.out.println("enter the user name:");
         String name = sc.next();
-        System.out.println("Enter the pin:");
+        System.out.println("enter the password:");
         int pin = sc.nextInt();
-        System.out.println("Login successful");
+        System.out.println("Login successfully");
     }
 
     void print() {
-        int i;
         try {
-            for (i = 1; i <= 5; i++) {
+            for (int i = 1; i <= 5; i++) {
                 System.out.println(i);
-                Thread.sleep(5000);
+                Thread.sleep(50000);
             }
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
@@ -31,12 +29,13 @@ class Task {
         System.out.println(c);
     }
 }
-
-public class SingleThread {
-    public static void main(String[] args) {
-        Task t1 = new Task();
-        t1.banking();
-        t1.print();
-        t1.add();
+    class singleThread{
+        public static void main(String[] args) {
+            Task t = new Task();
+            t.banking();
+            t.print();
+            t.add();
+        }
     }
-}
+
+
