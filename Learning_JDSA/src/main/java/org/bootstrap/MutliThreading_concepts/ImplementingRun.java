@@ -1,20 +1,20 @@
-package org.bootstrap.Learning_Concepts;
+package org.bootstrap.MutliThreading_concepts;
 
-class task1 implements Runnable {
+class TAsk1 implements Runnable {
     @Override
     public void run() {
         System.out.println("The task1 will get Executed");
     }
 }
 
-class task2 implements Runnable {
+class TAsk2 implements Runnable {
     @Override
     public void run() {
         System.out.println("The task2 will get Executed");
     }
 }
 
-class task3 implements Runnable {
+class TAsk3 implements Runnable {
     @Override
     public void run() {
         System.out.println("The task3 will get Executed");
@@ -23,9 +23,9 @@ class task3 implements Runnable {
 
 public class ImplementingRun {
     public static void main(String[] args) {
-        task1 t1 = new task1();
-        task2 t2 = new task2();
-        task3 t3 = new task3();
+        TAsk1 t1 = new TAsk1();
+        TAsk2 t2 = new TAsk2();
+        TAsk3 t3 = new TAsk3();
 
         Thread th1 = new Thread(t1);  // Pass the Runnable to the Thread constructor
         Thread th2 = new Thread(t2);

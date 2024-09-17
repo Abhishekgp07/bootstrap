@@ -1,4 +1,4 @@
-package org.bootstrap.Learning_Concepts;
+package org.bootstrap.MutliThreading_concepts;
 
 import java.util.Scanner;
 

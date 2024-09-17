@@ -1,25 +1,23 @@
-package org.bootstrap.Learning_Concpets;
+package org.bootstrap.MutliThreading_concepts;
 
-import java.util.Scanner;
-
-class Task1 extends Thread{
-    Task1(String name){
+ class TasK1 extends Thread{
+    TasK1(String name){
         super(name);
     }
     public void run(){
         System.out.println("Task1  will get executed");
     }
 }
-class Task2 extends Thread{
-    Task2(String name){
+class TasK2 extends Thread{
+    TasK2(String name){
         super(name);
     }
     public void run(){
         System.out.println("Task2 will  get executed");
     }
 }
-class Task3 extends Thread{
-    Task3(){
+class TasK3 extends Thread{
+    TasK3(){
         start();;
     }
     public void run(){
@@ -29,9 +27,9 @@ class Task3 extends Thread{
 
 class NamingOfThreads{
     public static void main(String[] args) {
-        Task1 t1= new Task1("Banking Thread");
-        Task2 t2 = new Task2("Printing Thread");
-        Task3 t3 = new Task3();
+        TasK1 t1= new TasK1("Banking Thread");
+        TasK2 t2 = new TasK2("Printing Thread");
+        TasK3 t3 = new TasK3();
         t1.start();
         t2.start();
         t3.setName("Adding Thread");

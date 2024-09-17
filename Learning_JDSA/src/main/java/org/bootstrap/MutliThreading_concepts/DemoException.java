@@ -1,6 +1,4 @@
-package org.bootstrap.Learning_Concepts;
-
-import java.util.Scanner;
+package org.bootstrap.MutliThreading_concepts;
 
 class Demo {
     void fun1() {

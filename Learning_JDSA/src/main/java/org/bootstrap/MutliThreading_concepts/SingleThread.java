@@ -1,4 +1,4 @@
-package org.bootstrap.Learning_Concpets;
+package org.bootstrap.MutliThreading_concepts;
 
 import java.util.Scanner;
 class Task {

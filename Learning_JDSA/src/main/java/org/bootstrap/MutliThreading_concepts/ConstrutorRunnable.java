@@ -1,6 +1,5 @@
-package org.bootstrap.Learning_Concpets;
+package org.bootstrap.MutliThreading_concepts;
 
-import java.util.Scanner;
 class task1 implements Runnable{
     task1(){
         Thread th1 = new Thread(this);

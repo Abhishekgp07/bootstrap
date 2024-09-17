@@ -1,6 +1,5 @@
-package org.bootstrap.Learning_Concpets;
+package org.bootstrap.MutliThreading_concepts;
 
-import java.util.Scanner;
 class Msword extends Thread {
     Msword(String name) {
         super(name);
