@@ -18,7 +18,7 @@ class TasK2 extends Thread{
 }
 class TasK3 extends Thread{
     TasK3(){
-        start();;
+        start();
     }
     public void run(){
         System.out.println("Task3 will get executed");

@@ -21,6 +21,7 @@ class ATM implements Runnable{
 }
 public class Case2MultiThread {
     public static void main(String[] args) {
+
         ATM a = new ATM();
     }
 }

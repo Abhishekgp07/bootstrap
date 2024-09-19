@@ -23,6 +23,7 @@ class BANK extends Thread{
 
 public class SynchronizedMultiThread {
     public static void main(String[] args) {
+
         BANK b= new BANK();
     }
 }

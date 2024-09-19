@@ -8,7 +8,7 @@ class Msword extends Thread {
     public void run() {
         if (getName().equals("Typing")) {
             Typing();
-        } else if (getName().equals("Chceking")) {
+        } else if (getName().equals("Checking")) {
             spellChecking();
         } else {
             Autosave();

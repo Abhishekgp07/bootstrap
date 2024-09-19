@@ -28,7 +28,7 @@ class Task {
         int c = a + b;
         System.out.println(c);
     }
-}
+} 
     class singleThread{
         public static void main(String[] args) {
             Task t = new Task();
