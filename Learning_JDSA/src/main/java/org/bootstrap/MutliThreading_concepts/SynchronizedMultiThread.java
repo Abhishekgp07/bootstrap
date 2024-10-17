@@ -1,7 +1,7 @@
 package org.bootstrap.MutliThreading_concepts;
 
 import java.util.Scanner;
-class BANK extends Thread{
+class  BANK extends Thread{
     BANK(){
         Thread t1 = new Thread(this);
         Thread t2 = new Thread(this);

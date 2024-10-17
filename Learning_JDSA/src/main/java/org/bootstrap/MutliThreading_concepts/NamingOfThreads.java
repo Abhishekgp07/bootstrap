@@ -25,7 +25,7 @@ class TasK3 extends Thread{
     }
 }
 
-class NamingOfThreads{
+ class NamingOfThreads{
     public static void main(String[] args) {
         TasK1 t1= new TasK1("Banking Thread");
         TasK2 t2 = new TasK2("Printing Thread");

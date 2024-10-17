@@ -1,7 +1,7 @@
 package org.bootstrap.sort;
 
 import java.util.Scanner;
-class BubblesortAlgo {
+class BubbleSortAlgo {
     public void bubblesort(int arr[], int size) {
         for (int i = 0; i < size - 1; i++) {
             for (int j = i; j < size; j++) {
@@ -36,7 +36,7 @@ class BubblesortAlgo {
                 System.out.println(arr[i]+" ");
             }
             System.out.println();
-            BubblesortAlgo bg= new BubblesortAlgo();
+            BubbleSortAlgo bg= new BubbleSortAlgo();
             bg.bubblesort(arr,size);
         }
 

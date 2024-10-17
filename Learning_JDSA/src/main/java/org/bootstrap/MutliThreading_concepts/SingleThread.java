@@ -1,7 +1,7 @@
 package org.bootstrap.MutliThreading_concepts;
 
 import java.util.Scanner;
-class Task {
+ class Task {
     void banking() {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the user name:");
@@ -29,7 +29,7 @@ class Task {
         System.out.println(c);
     }
 } 
-    class singleThread{
+   class singleThread{
         public static void main(String[] args) {
             Task t = new Task();
             t.banking();

@@ -1,7 +1,7 @@
 package org.bootstrap.StringPrograms;
 
 import java.util.*;
-public class StringWOrdWise {
+public class StringWordWise {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the string s1:");
