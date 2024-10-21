@@ -4,14 +4,13 @@ class school{
     private int id;
 
 
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public school(String name, int id){
         this.name=name;
         this.id=id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
     public String name() {
         return name;
@@ -33,7 +32,7 @@ class school{
     }
 }
 
-public class oops1 {
+public class Oops1 {
     public static void main(String[] args) {
         school sc = new school("abhi",22);
         sc.display();
