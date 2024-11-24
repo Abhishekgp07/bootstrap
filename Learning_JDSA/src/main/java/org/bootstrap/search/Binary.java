@@ -19,7 +19,7 @@ public class Binary {
                 end = mid - 1; // Move the end pointer to the left
             } else if (target > arr[mid]) {
                 start = mid + 1; // Move the start pointer to the right
-            } else {
+            }  else {
                 return mid; // Return index when target is found
             }
         }
